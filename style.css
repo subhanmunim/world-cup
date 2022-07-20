@@ -27,7 +27,7 @@ body {
 
 
 
-/* --- Common/Utility Style --- */
+/* --- Common Style --- */
 
 .container {
     display: flex;
@@ -49,10 +49,8 @@ body {
     color: var(--color-white);
     border: 2px solid var(--primary-color);
     padding: 16px 25px;
-
     background-color: var(--primary-color);
     border-radius: 5px;
-
     transition: all ease-in 300ms;
 }
 
@@ -106,8 +104,8 @@ main {
 }
 
 .half-width p {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 26px;
     margin: 20px 0px 30px;
     color: var(--color-white);
@@ -116,7 +114,7 @@ main {
 .half-width img {
     width: 581px;
     height: 613px;
-    margin: 0 0 -7px 8%;
+    margin: 0 0 -4px 8%;
 }
 
 /* --- Hero Section Style End --- */
@@ -154,7 +152,6 @@ main {
     line-height: 30px;
     color: var(--item-bg-color);
     padding: 17px 35px;
-
     background-color: var(--color-white);
     border: 2px solid var(--color-white);
     border-radius: 10px;
@@ -226,7 +223,6 @@ main {
 .meta-icon {
     margin-right: 10px;
     color: rgba(22, 22, 22, 0.8);
-    ;
 }
 
 .meta-text {
@@ -240,6 +236,7 @@ main {
 /* ---- Body Item Container Style End --- */
 
 /* Main Body Style  End */
+
 
 /* Footer Style Start  */
 footer {
@@ -312,3 +309,98 @@ footer {
 }
 
 /* Footer Style End  */
+
+
+/* ---      Responsive Style For Mobile Device             ---- */
+@media only screen and (max-width: 576px) {
+
+    /* Common Style  */
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .button {
+        padding: 8px 20px;
+    }
+
+    /* Hero Section Style */
+    .hero {
+        padding: 40px 38px 0px;
+    }
+
+    .half-width h1 {
+        font-size: 2em;
+        line-height: 33px;
+    }
+
+    .half-width p {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 8px 0px 16px;
+    }
+
+    .half-width img {
+        margin: 20px 0 0 0;
+        width: 90%;
+        height: auto;
+        margin-bottom: -5%;
+    }
+
+    #single-player {
+        margin-bottom: -10px;
+    }
+
+    /* Body  */
+    .wraper-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .news-item-box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .side-menu {
+        background-color: var(--color-white);
+        border-radius: none;
+        row-gap: 30px;
+        position: static;
+    }
+
+    .side-menu-item {
+        width: auto;
+        font-size: 18px;
+        padding: 12px 45px;
+        border: 2px solid #E8E8E8;
+    }
+
+    .side-menu-item:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--color-white);
+    }
+
+    #active {
+        padding: 12px 45px;
+    }
+
+    #active:hover {
+        border-color: var(--primary-color);
+    }
+
+    /* Footer  */
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-menu-items {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+}
