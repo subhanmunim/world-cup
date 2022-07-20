@@ -1,0 +1,244 @@
+/* Import Font from GOOGLE  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* --- Default Margin Padding --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* --- Global Style Value ---  */
+:root {
+
+    --primary-color: #DD0000;
+    --item-bg-color: #161616;
+    --color-white: #FFFFFF;
+    --color-black: #000000;/ --body-font: 'Poppins', sans-serif;
+    --item-border: 1px solid #E8E8E8;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+
+
+/* --- Common/Utility Style --- */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-width {
+    width: 50%;
+}
+
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-white);
+    border: 2px solid var(--primary-color);
+    padding: 16px 25px;
+
+    background-color: var(--primary-color);
+    border-radius: 5px;
+
+    transition: all ease-in 300ms;
+}
+
+.button .fa-solid {
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: var(--color-white);
+    color: var(--primary-color);
+}
+
+#view-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+
+
+/* Main Body Style  Start */
+
+main {
+    padding: 2% 5%;
+}
+
+
+
+
+
+
+/* --Hero Section Style Start--- */
+
+.hero {
+    background-color: var(--item-bg-color);
+    border-radius: 30px;
+    padding: 2% 7% 0px;
+}
+
+.half-width {
+    padding: 0px;
+    margin: 0;
+}
+
+.half-width h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    color: var(--color-white);
+}
+
+.half-width p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 0px 30px;
+    color: var(--color-white);
+}
+
+.half-width img {
+    width: 581px;
+    height: 613px;
+    margin: 0 0 -7px 8%;
+}
+
+/* --- Hero Section Style End --- */
+
+
+/* --- Body Item Container Style Start --- */
+
+.wraper-container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 24px;
+    margin: 70px 0;
+}
+
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-color: var(--item-bg-color);
+    border-radius: 10px;
+    row-gap: 30px;
+    position: sticky;
+    top: 70px;
+}
+
+.side-menu-item {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--item-bg-color);
+    padding: 17px 35px;
+
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 10px;
+    transition: all ease-in 250ms;
+}
+
+.side-menu-item:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+#active {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--color-white);
+}
+
+#active:hover {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: var(--primary-color);
+}
+
+.news-item-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+
+
+.news-item {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.news-item-detail {
+    padding: 20px;
+}
+
+.news-category {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 1px solid var(--item-bg-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.news-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 15px 0 20px;
+}
+
+.news-info {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.meta-icon {
+    margin-right: 10px;
+    color: rgba(22, 22, 22, 0.8);
+    ;
+}
+
+.meta-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(22, 22, 22, 0.7);
+    ;
+}
+
+/* ---- Body Item Container Style End --- */
+
+
+
+/* Main Body Style  End */
