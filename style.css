@@ -27,7 +27,6 @@ body {
 }
 
 
-
 /* --- Common Style --- */
 
 .container {
@@ -73,18 +72,14 @@ body {
 
 
 
-/* Main Body Style  Start */
+/*--- Main Body Style  Start ---*/
 
 main {
     padding: 2% 5%;
 }
 
 
-
-
-
-
-/* --Hero Section Style Start--- */
+/* ---Hero Section Style Start--- */
 
 .hero {
     background-color: var(--item-bg-color);
@@ -234,10 +229,11 @@ main {
     ;
 }
 
-/* ---- Body Item Container Style End --- */
+/* --- Body Item Container Style End --- */
 
-/* Main Body Style  End */
-/* Match Fixing Schedule Style  */
+/*--- Main Body Style  End ---*/
+
+/*--- Match Fixing Schedule Style --- */
 .match-item {
     display: flex;
     flex-direction: column;
@@ -296,7 +292,7 @@ main {
 }
 
 
-/* Footer Style Start  */
+/*--- Footer Style Start ---  */
 footer {
     display: flex;
     flex-direction: column;
@@ -369,7 +365,10 @@ footer {
 /* Footer Style End  */
 
 
-/* ---      Responsive Style For Mobile Device             ---- */
+/* ---  @@@@@    Responsive Style For Mobile Device   @@@@@          ---- */
+
+
+
 @media only screen and (max-width: 576px) {
 
     /* Common Style  */
@@ -466,7 +465,7 @@ footer {
 /* --- Responsive Style For Tablet Device --- */
 @media only screen and (min-width: 767.1px) and (max-width: 991px) {
 
-    /* Common Style  */
+    /*--- Common Style  ---*/
     .button {
         padding: 8px 20px;
     }
@@ -478,7 +477,7 @@ footer {
         margin: 50px 0;
     }
 
-    /* Hero Section Style */
+    /*--- Hero Section Style ---*/
     .half-width h1 {
         font-size: 2.5em;
         line-height: 45px;
@@ -495,7 +494,7 @@ footer {
         height: auto;
     }
 
-    /* Body  */
+    /*--- Body  ---*/
     .wraper-container {
         grid-template-columns: 1fr;
         margin: 0;
@@ -534,7 +533,7 @@ footer {
         border-color: var(--primary-color);
     }
 
-    /* Footer  */
+    /*--- Footer  ---*/
     .footer-menu-items {
         flex-wrap: wrap;
         align-items: center;
