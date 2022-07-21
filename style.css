@@ -64,10 +64,8 @@ body {
 }
 
 #view-all-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
+    display: none;
+
 }
 
 
